@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Y. Siva Ganesh | AI & Data Science Student Portfolio – Building intelligent digital experiences with JavaScript, Java, and Python.">
+  <title>Y. Siva Ganesh | Portfolio</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Geist:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════ CANVAS BACKGROUND ══════════════════════════ -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ══════════════════════════ NAVBAR ══════════════════════════ -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <div class="nav-brand">
+        <span class="material-symbols-outlined nav-icon">terminal</span>
+        <span class="brand-text">Y. SIVA GANESH</span>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active" data-section="hero">HOME</a>
+        <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+        <a href="#skills" class="nav-link" data-section="skills">SKILLS</a>
+        <a href="#projects" class="nav-link" data-section="projects">WORK</a>
+        <a href="#contact" class="nav-cta" data-section="contact">CONTACT</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#hero" class="mobile-link" data-section="hero">HOME</a>
+    <a href="#about" class="mobile-link" data-section="about">ABOUT</a>
+    <a href="#skills" class="mobile-link" data-section="skills">SKILLS</a>
+    <a href="#projects" class="mobile-link" data-section="projects">WORK</a>
+    <a href="#contact" class="mobile-link" data-section="contact">CONTACT</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════ HERO ══════════════════════════ -->
+    <section id="hero" class="hero-section">
+      <div class="hero-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <!-- Avatar -->
+        <div class="avatar-wrap fly-in fly-in-down" data-delay="0">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuClyL_w70VYLfHadiNogSNOwqXsnJXmTDSiEdiHpQpetidkzgmziaZRkNmXAk21_YRUuz--dXiAxx65H0XrYPqya_9pIRkcy9udACjKUcsMM6PKc7Hhn_zTDUejPvieHQFQc9GLyKRo5n3cs88d1V1RPUrAe6-FYzLrYeG2S2n6mtZN4pLkSTXDWEAbCU6DUGmP-cGqs4L-qEYnha3mtUgljTr5kT4MLag7wiAWKXHlthHvrCWaTpqsbdUHckKooWp3b55inki5BrNZ"
+              alt="Y. Siva Ganesh" class="avatar-img">
+          </div>
+        </div>
+
+        <!-- Status badge -->
+        <div class="status-badge fly-in fly-in-up" data-delay="100">
+          <span class="status-dot"></span>
+          <span class="status-text">AVAILABLE FOR COLLABORATION</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title fly-in fly-in-up" data-delay="200">
+          Y. SIVA GANESH
+        </h1>
+        <h2 class="hero-sub fly-in fly-in-up" data-delay="300">
+          Building Intelligent
+          <span class="gradient-text typing-text" id="typed-text"></span>
+        </h2>
+        <p class="hero-desc fly-in fly-in-up" data-delay="400">
+          I am Y. Siva Ganesh, an AI &amp; Data Science student building the future of web and data with a passion for
+          software engineering.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta fly-in fly-in-up" data-delay="500">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-ghost" download>
+            Download CV
+          </a>
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="scroll-hint fly-in fly-in-up" data-delay="700">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-label">Scroll to explore</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ ABOUT ══════════════════════════ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: visual -->
+          <div class="about-visual reveal fly-in fly-in-left">
+            <div class="code-card glass-card">
+              <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="code-card-title">about_me.py</span>
+              </div>
+              <pre class="code-block"><span class="code-kw">class</span> <span class="code-fn">SivaGanesh</span>:
+    <span class="code-kw">def</span> <span class="code-fn">__init__</span>(self):
+        self.name     = <span class="code-str">"Y. Siva Ganesh"</span>
+        self.role     = <span class="code-str">"AI & DS Student"</span>
+        self.langs    = [<span class="code-str">"Python"</span>, <span class="code-str">"Java"</span>,
+                         <span class="code-str">"JavaScript"</span>]
+        self.passion  = <span class="code-str">"Software Engineering"</span>
+        self.status   = <span class="code-str">"Available ✓"</span>
+
+    <span class="code-kw">def</span> <span class="code-fn">greet</span>(self):
+        <span class="code-kw">return</span> <span class="code-str">"Let's build something amazing!"</span></pre>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-card glass-card reveal fly-in fly-in-left" data-delay="100">
+                <span class="stat-num gradient-text">5+</span>
+                <span class="stat-label">PROJECTS COMPLETED</span>
+              </div>
+              <div class="stat-card glass-card reveal fly-in fly-in-right" data-delay="200">
+                <span class="stat-num" style="color: var(--secondary);">4+</span>
+                <span class="stat-label">CORE LANGUAGES</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: text -->
+          <div class="about-text">
+            <span class="section-label reveal fly-in fly-in-right" data-delay="0">WHO I AM</span>
+            <h2 class="section-title reveal fly-in fly-in-right" data-delay="100">
+              AI &amp; Data Science Student
+              <span class="gradient-text">Bridging Data and UI</span>
+            </h2>
+            <p class="body-text reveal fly-in fly-in-right" data-delay="200">
+              I am a dedicated AI &amp; Data Science student with a profound passion for architecting web applications
+              and exploring the frontiers of emerging technologies.
+            </p>
+            <p class="body-text reveal fly-in fly-in-right" data-delay="300">
+              My journey focuses on mastering JavaScript, Java, and Python to create seamless digital solutions. I am
+              driven by the goal of becoming a software developer who solves complex problems through elegant code and
+              data-driven insights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ SKILLS ══════════════════════════ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal fly-in fly-in-up">
+          <span class="section-label">EXPERTISE</span>
+          <h2 class="section-title">Technical Skillset</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal fly-in fly-in-up" data-delay="0">
+            <div class="skill-icon-wrap">
+              <span class="material-symbols-outlined skill-icon">html</span>
+            </div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card glass-card reveal fly-in fly-in-up" data-delay="80">
+            <div class="skill-icon-wrap">
+              <span class="material-symbols-outlined skill-icon">css</span>
+            </div>
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card glass-card reveal fly-in fly-in-up" data-delay="160">
+            <div class="skill-icon-wrap">
+              <span class="material-symbols-outlined skill-icon">javascript</span>
+            </div>
+            <span class="skill-name">JAVASCRIPT</span>
+          </div>
+          <div class="skill-card glass-card reveal fly-in fly-in-up" data-delay="240">
+            <div class="skill-icon-wrap">
+              <span class="material-symbols-outlined skill-icon">coffee</span>
+            </div>
+            <span class="skill-name">JAVA</span>
+          </div>
+          <div class="skill-card glass-card reveal fly-in fly-in-up" data-delay="320">
+            <div class="skill-icon-wrap">
+              <span class="material-symbols-outlined skill-icon">terminal</span>
+            </div>
+            <span class="skill-name">PYTHON</span>
+          </div>
+          <div class="skill-card glass-card reveal fly-in fly-in-up" data-delay="400">
+            <div class="skill-icon-wrap">
+              <span class="material-symbols-outlined skill-icon">analytics</span>
+            </div>
+            <span class="skill-name">DATA SCIENCE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ PROJECTS ══════════════════════════ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects-header reveal fly-in fly-in-up">
+          <div>
+            <span class="section-label" style="color: var(--secondary);">SELECTED WORKS</span>
+            <h2 class="section-title">Recent Projects</h2>
+          </div>
+          <p class="body-text" style="max-width:360px;">
+            A collection of technical experiments ranging from web utilities to data analysis tools.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <div class="project-card glass-card reveal fly-in fly-in-up" data-delay="0">
+            <div class="project-img-wrap">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3O0iTZnPnnACUqOWHOg949C2z_f3ItUFqJffyyOe36eT3e4Bko2joYOX4c-R3McyMj10pKPKXLDxH18ZG0g33VIzZfGLaKDlwCb8efaWy6u0MZPBRUb8dYSO1uTZow9FnC_UeQ90Hr75BqI2vw78Y-GbDJjKD3UPzc3HqVFGBR03GKtSFbTRxNA9Az7VUJYlbGYCoa2ANOc48ZmxNaKwjTHQTBHxikzDUGXMaCpJMTQJfP10yYMBuhk8WiFf-ZRVyafNxuxqvQdz"
+                alt="Calculator Website" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn">PREVIEW PROJECT</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <h3 class="project-title">Calculator Website</h3>
+              <p class="project-desc">A fully functional scientific calculator built with vanilla web technologies
+                focusing on responsive design.</p>
+              <a href="#" class="project-link">
+                VIEW PROJECT
+                <span class="material-symbols-outlined link-arrow">north_east</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-card glass-card reveal fly-in fly-in-up" data-delay="120">
+            <div class="project-img-wrap">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgsYXJTmfiBA4ZRk6Ya5uV6OYISxbS5MVxXbUKIhLMG_gAnSuk2vQTvW3rvproMzL8HiFv8_RsDlrSVxQdvJL7RU3BGEyfHA8jj2Q6ch0s0pMoPiJhh8kqUG0ZpFcZCEI2VWDepDZx4WikwvtclU0984ZUXRdvbFYd04kS7qBaEGu8gdqqIFl5kx1L4VNPvT-fSRLO9noOr1nb_DExG02AGwwlSCyqozVPKV2Tcv1E--x__TkEhmxcAW0j9lz2ugf8zL6zcy8FF3T9"
+                alt="To-Do List App" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn">PREVIEW PROJECT</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">JAVASCRIPT</span>
+                <span class="tag">LOCALSTORAGE</span>
+              </div>
+              <h3 class="project-title">To-Do List App</h3>
+              <p class="project-desc">Productivity tool with persistent data storage and a focus on clean user
+                interactions.</p>
+              <a href="#" class="project-link">
+                VIEW PROJECT
+                <span class="material-symbols-outlined link-arrow">north_east</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-card glass-card reveal fly-in fly-in-up" data-delay="240">
+            <div class="project-img-wrap">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyNb1aaywbjPPUpn4Nfko2zHnIQJpwK5igHUztiz_AzctF5TvkGk6jdmhN2Xk2B84ObBmXQaQCW9fb3KLQSCh4Eih2NKuEcZyK08tzIThHe6tzZUl8vxmoOTUA_JjVnqVP7IIQ8Q59dnl4gK_pSV8DVYb9fSt6k_ZYOyHKo97yiQ6z_iFlOM5S_ZO_Z4QI4dEZqRN-YiQQy8c8JZs_2S52dQz0WZvQdWBNO67zVGagl8zQiALPSS-jPnJdPXbPFxsl8iEVlgcgWvSR"
+                alt="Student Management System" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn">PREVIEW PROJECT</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">JAVA</span>
+                <span class="tag">CRUD</span>
+              </div>
+              <h3 class="project-title">Student Management System</h3>
+              <p class="project-desc">Backend-heavy application focused on database management and efficient data
+                retrieval systems.</p>
+              <a href="#" class="project-link">
+                VIEW PROJECT
+                <span class="material-symbols-outlined link-arrow">north_east</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="project-card glass-card reveal fly-in fly-in-up" data-delay="360">
+            <div class="project-img-wrap">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4eE0wL_1oKCbl6k_u6MSj5R9rotN2g_8EjFmcO7Tjxy5qeFONMt0exnOpQNurdOslTpKtXFaIqRU4LKoJNy2IzLXCVgBQHIMnZqNxOSCLQ0YUHy3TDNJctTsnwE23A0FGTaxHloQldx_oInEWvyryEN2Qm-nWgpE9_jbnCv7SaD78swvbtsITdFt6f0FQ4CmADAUhRtys7Q9UrhcKCPBUU5tGs1zM67QVJQw7otb4cu0uSApCAYQFtCMeD0zGtNsTyapx9PyGogTa"
+                alt="Basic AI Prediction Project" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn">PREVIEW PROJECT</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">PYTHON</span>
+                <span class="tag">SCIKIT-LEARN</span>
+              </div>
+              <h3 class="project-title">Basic AI Prediction Project</h3>
+              <p class="project-desc">Data science model using machine learning algorithms to predict trends from
+                structured datasets.</p>
+              <a href="#" class="project-link">
+                VIEW PROJECT
+                <span class="material-symbols-outlined link-arrow">north_east</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ RESUME ══════════════════════════ -->
+    <section id="resume" class="section section-alt">
+      <div class="container">
+        <div class="resume-card glass-card reveal fly-in fly-in-up">
+          <div class="resume-bg-glow"></div>
+          <div class="resume-content">
+            <h2 class="section-title">Ready to work together?</h2>
+            <p class="body-text" style="max-width:520px;margin:0 auto 3rem;">
+              Download my latest resume to see a detailed breakdown of my academic background and technical expertise.
+            </p>
+            <a href="assets/resume.pdf" class="btn btn-secondary resume-btn" download>
+              <span class="material-symbols-outlined">download</span>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════ CONTACT ══════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left info -->
+          <div class="contact-info">
+            <span class="section-label reveal fly-in fly-in-left" data-delay="0">GET IN TOUCH</span>
+            <h2 class="section-title reveal fly-in fly-in-left" data-delay="100">
+              Let's build something extraordinary.
+            </h2>
+            <p class="body-text reveal fly-in fly-in-left" data-delay="200">
+              Currently looking for internship opportunities and collaborative projects in AI, Data Science, and
+              Full-stack development.
+            </p>
+
+            <div class="contact-items">
+              <a href="mailto:ganeshyalasiri@email.com" class="contact-item glass-card reveal fly-in fly-in-left"
+                data-delay="300">
+                <div class="contact-icon-wrap">
+                  <span class="material-symbols-outlined contact-icon">mail</span>
+                </div>
+                <div>
+                  <p class="contact-label">EMAIL ME</p>
+                  <p class="contact-value">ganeshyalasiri@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:+917075267884" class="contact-item glass-card reveal fly-in fly-in-left" data-delay="400">
+                <div class="contact-icon-wrap">
+                  <span class="material-symbols-outlined contact-icon">call</span>
+                </div>
+                <div>
+                  <p class="contact-label">CALL ME</p>
+                  <p class="contact-value">+91 7075267884</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right form -->
+          <div class="contact-form-wrap glass-card reveal fly-in fly-in-right" data-delay="200">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label class="form-label">YOUR NAME</label>
+                <input type="text" class="form-input" placeholder="John Doe" id="form-name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">EMAIL ADDRESS</label>
+                <input type="email" class="form-input" placeholder="john@example.com" id="form-email" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">MESSAGE</label>
+                <textarea class="form-input form-textarea" placeholder="Tell me about your project..." id="form-message"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+                <span class="btn-text">Send Message</span>
+                <span class="material-symbols-outlined">send</span>
+              </button>
+              <p class="form-status" id="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">Y. SIVA GANESH</span>
+        <p class="footer-copy">© 2024 Y. Siva Ganesh. Built with precision.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">GITHUB</a>
+        <a href="#" class="footer-link">LINKEDIN</a>
+        <a href="#" class="footer-link">TWITTER</a>
+        <a href="mailto:ganeshyalasiri@email.com" class="footer-link">EMAIL</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
